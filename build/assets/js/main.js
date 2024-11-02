@@ -22,6 +22,8 @@ async function loadLocalization(lang) {
     const translations = await response.json();
 
     applyTranslations(translations);
+    document.documentElement.lang = lang;
+    document.body.classList.add(`lang-${lang}`);
   } catch (error) {
     console.error('Error loading localization:', error);
   }
@@ -52,6 +54,18 @@ function initLocale() {
   const userLang = getUserLanguage();
 
   loadLocalization(userLang);
+
+  function adjustFontSize(selector) {
+    const element = document.querySelector(selector);
+    while (element.scrollWidth > element.offsetWidth) {
+      const currentFontSize = parseFloat(window.getComputedStyle(element).fontSize);
+      element.style.fontSize = `${currentFontSize - 10}px`;
+    }
+  }
+
+  // Применение функции к элементам с длинными строками
+  adjustFontSize('.banner__title');
+  adjustFontSize('.banner__description-item');
 }
 
 initLocale();

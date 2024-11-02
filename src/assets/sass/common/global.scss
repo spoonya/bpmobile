@@ -123,6 +123,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   color: $cl-light-alpha;
+
+  &.lang-fr,
+  &.lang-de,
+  &.lang-es,
+  &.lang-pt {
+    font-size: 1.2rem;
+  }
+
+  &.lang-ja {
+    font-size: 1.4rem;
+  }
 }
 
 html,

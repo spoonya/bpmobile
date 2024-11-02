@@ -286,6 +286,17 @@ body {
   color: #fff;
 }
 
+body.lang-de,
+body.lang-es,
+body.lang-fr,
+body.lang-pt {
+  font-size: 1.2rem;
+}
+
+body.lang-ja {
+  font-size: 1.4rem;
+}
+
 body,
 html {
   height: 100%;
@@ -343,6 +354,13 @@ html {
   filter: drop-shadow(0 0 4.8rem rgba(4, 3, 26, .83));
 }
 
+body.lang-de .banner__title,
+body.lang-fr .banner__title,
+body.lang-ja .banner__title,
+body.lang-pt .banner__title {
+  font-size: 3.6rem;
+}
+
 .banner__body {
   margin-top: auto;
   margin-bottom: 2.8rem;
@@ -371,6 +389,16 @@ html {
 
 .banner__menu-item:not(:last-child) {
   margin-right: 3.2rem;
+}
+
+body.lang-de .banner__menu-link,
+body.lang-fr .banner__menu-link {
+  font-size: .9rem;
+}
+
+body.lang-es .banner__menu-link,
+body.lang-pt .banner__menu-link {
+  font-size: 1.1rem;
 }
 
 .image-labeled {
@@ -434,6 +462,14 @@ html {
   padding: 1.6rem;
 }
 
+body.lang-de .btn,
+body.lang-es .btn,
+body.lang-fr .btn,
+body.lang-ja .btn,
+body.lang-pt .btn {
+  font-size: 1.6rem;
+}
+
 .btn-text {
   font-size: 1.3rem;
   color: rgba(255,255,255,.5);
@@ -469,6 +505,7 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: 1.1rem 6.5rem .9rem 2.4rem;
+  min-height: 5.6rem;
   border: 1px solid transparent;
   border-radius: 3.2rem;
   -webkit-backdrop-filter: blur(1.1rem);
@@ -480,6 +517,10 @@ html {
 .radio-btn__group {
   display: flex;
   flex-direction: column;
+}
+
+.radio-btn__label {
+  margin-right: 1rem;
 }
 
 .radio-btn__title {
@@ -504,6 +545,14 @@ html {
   padding: .2rem 2.2rem;
   box-shadow: 0 1px 6px 0 rgba(0,0,0,.5);
   border-radius: 1rem;
+}
+
+body.lang-de .radio-btn__highlight,
+body.lang-es .radio-btn__highlight,
+body.lang-fr .radio-btn__highlight,
+body.lang-ja .radio-btn__highlight,
+body.lang-pt .radio-btn__highlight {
+  font-size: 1.1rem;
 }
 
 @media only screen and (min-width:390px) {

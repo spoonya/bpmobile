@@ -10,4 +10,12 @@
   text-align: center;
 
   padding: 1.6rem;
+
+  body.lang-fr &,
+  body.lang-de &,
+  body.lang-es &,
+  body.lang-ja &,
+  body.lang-pt & {
+    font-size: 1.6rem;
+  }
 }
