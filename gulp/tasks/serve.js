@@ -10,6 +10,7 @@ const copyDependencies = require('./copyDependencies');
 const svgSprite = require('./svgSprite');
 const video = require('./video');
 const doc = require('./doc');
+const data = require('./data');
 
 const server = require('browser-sync').create();
 
@@ -54,6 +55,7 @@ module.exports = function serve(cb) {
   );
   gulp.watch('src/assets/video/**/*', gulp.series(video, readyReload));
   gulp.watch('src/assets/doc/**/*', gulp.series(doc, readyReload));
+  gulp.watch('src/assets/data/**/*', gulp.series(data, readyReload));
   gulp.watch('package.json', gulp.series(copyDependencies, readyReload));
 
   return cb();

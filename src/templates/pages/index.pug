@@ -9,49 +9,47 @@ block content
             a.btn-icon.banner__close(href="#" aria-label="close")
               +icon('btn-icon__icon banner__close-icon', 'cross')
           .banner__body
-            strong.banner__title Get Unlimited Access
+            strong.banner__title(data-i18n="Get Unlimited <br>Access")
             ul.banner__description-list.list-reset
               li.banner__description-item
                 figure.image-labeled
                   img.image-labeled__img(src="assets/img/png/feature-1.png" srcset="assets/img/png/feature-1@2x.png 2x, assets/img/png/feature-1@3x.png 3x" width="105" height="139" alt="")
-                  figcaption.image-labeled__figcaption Unlimited Art Creation
+                  figcaption.image-labeled__figcaption(data-i18n="Unlimited Art <br>Creation")
               li.banner__description-item
                 figure.image-labeled
                   img.image-labeled__img(src="assets/img/png/feature-2.png" srcset="assets/img/png/feature-2@2x.png 2x, assets/img/png/feature-2@3x.png 3x" width="105" height="139" alt="")
-                  figcaption.image-labeled__figcaption Exclusive Styles
+                  figcaption.image-labeled__figcaption(data-i18n="Exclusive <br>Styles")
               li.banner__description-item
                 figure.image-labeled
                   img.image-labeled__img(src="assets/img/png/feature-3.png" srcset="assets/img/png/feature-3@2x.png 2x, assets/img/png/feature-3@3x.png 3x" width="105" height="139" alt="")
-                  figcaption.image-labeled__figcaption Magic Avatars With 20% Off
+                  figcaption.image-labeled__figcaption(data-i18n="Magic Avatars <br>With 20% Off")
             .banner__controls
               ul.banner__options.list-reset
                 li.banner__option
                   label.radio-btn.radio-btn--highlighted
                     input.radio-btn__logic.js_subscrip-option(type="radio" name="subscription" value="https://apple.com/" checked)
                     span.radio-btn__styled
-                      span.radio-btn__highlight Best offer
+                      span.radio-btn__highlight(data-i18n="BEST OFFER")
                       span.radio-btn__group.radio-btn__label
-                        span.radio-btn__title Early access
-                        span.radio-btn__details Just $39.99 per year
+                        span.radio-btn__title(data-i18n="YEARLY ACCESS")
+                        span.radio-btn__details(data-i18n="Just {{price}} per year" data-price="$39.99")
                       span.radio-btn__group
-                        span.radio-btn__details $0.48
-                        span.radio-btn__details per week
+                        span.radio-btn__details(data-i18n="{{price}} <br>per week" data-price="$0.48")
                 li.banner__option
                   label.radio-btn
-                    input.radio-btn__logic.js_subscrip-option(type="radio" name="subscription" value="https://google.com/ ")
+                    input.radio-btn__logic.js_subscrip-option(type="radio" name="subscription" value="https://google.com/")
                     span.radio-btn__styled
                       span.radio-btn__group.radio-btn__label
-                        span.radio-btn__title Weekly access
+                        span.radio-btn__title(data-i18n="WEEKLY ACCESS")
                       span.radio-btn__group
-                        span.radio-btn__details $6.99
-                        span.radio-btn__details per week
-              button.btn.js_subscrip-continue(type="button") Continue
+                        span.radio-btn__details(data-i18n="{{price}} <br>per week" data-price="$6.99")
+              button.btn.js_subscrip-continue(type="button" data-i18n="Continue")
           .banner__footer
             ul.banner__menu-list.list-reset
               li.banner__menu-item
-                a.btn-text.banner__menu-link(href="#") Terms of Use
+                a.btn-text.banner__menu-link(href="#" data-i18n="Terms of Use")
               li.banner__menu-item
-                a.btn-text.banner__menu-link(href="#") Privacy Policy
+                a.btn-text.banner__menu-link(href="#" data-i18n="Privacy Policy")
               li.banner__menu-item
-                a.btn-text.banner__menu-link(href="#") Restore
+                a.btn-text.banner__menu-link(href="#" data-i18n="Restore")
 

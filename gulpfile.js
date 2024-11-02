@@ -12,6 +12,7 @@ const copyDependencies = require('./gulp/tasks/copyDependencies');
 const svgSprite = require('./gulp/tasks/svgSprite');
 const video = require('./gulp/tasks/video');
 const doc = require('./gulp/tasks/doc');
+const data = require('./gulp/tasks/data');
 const plugins = require('./gulp/tasks/plugins');
 
 function setMode(isProduction = false) {
@@ -33,6 +34,7 @@ const dev = gulp.parallel(
   svgSprite,
   video,
   doc,
+  data,
   plugins
 );
 
