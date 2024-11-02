@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  block head
+    include ../blocks/head
+
+  body
+    include ../mixins/common
+
+    .page
+      block header
+      block content
+      block footer
+    block scripts
+      include ../scripts/scripts

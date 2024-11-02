@@ -1,0 +1,94 @@
+.banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../img/jpg/bg.jpg');
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/jpg/bg@2x.jpg');
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url('../img/jpg/bg@3x.jpg');
+  }
+
+  height: 100svh;
+}
+
+.banner__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 3.7rem 0 1.1rem;
+
+  height: 100%;
+
+  @include media-custom-mf($media-xs-mf) {
+    padding: 7.2rem 0 3.1rem;
+  }
+}
+
+.banner__close-icon {
+  fill-opacity: 0.4;
+  fill: $cl-light-alpha;
+}
+
+.banner__title {
+  display: block;
+
+  font-weight: 900;
+  font-size: 4.2rem;
+  text-align: center;
+
+  margin-bottom: 4rem;
+
+  filter: drop-shadow(0 0 4.8rem rgba(4, 3, 26, 0.83));
+}
+
+.banner__body {
+  margin-top: auto;
+
+  margin-bottom: 2.8rem;
+
+  @include media-custom-mf($media-xs-mf) {
+    margin-bottom: 4.4rem;
+  }
+}
+
+.banner__description-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.4rem;
+
+  margin-bottom: 3rem;
+
+  @include media-custom-mf($media-xs-mf) {
+    margin-bottom: 4rem;
+  }
+}
+
+.banner__options {
+  margin-bottom: 0.8rem;
+
+  @include media-custom-mf($media-xs-mf) {
+    margin-bottom: 1.6rem;
+  }
+}
+
+.banner__option {
+  &:not(:last-child) {
+    margin-bottom: 0.8rem;
+  }
+}
+
+.banner__menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__menu-item {
+  &:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}

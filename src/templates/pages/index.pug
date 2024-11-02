@@ -1,0 +1,58 @@
+extends ../layout/layout
+
+block content
+  main
+    .banner
+      .container
+        .banner__inner
+          .banner__head
+            a.btn-icon.banner__close(href="#" aria-label="close")
+              +icon('btn-icon__icon banner__close-icon', 'cross')
+          .banner__body
+            strong.banner__title Get Unlimited Access
+            ul.banner__description-list.list-reset
+              li.banner__description-item
+                figure.image-labeled
+                  img.image-labeled__img(src="assets/img/png/feature-1.png" srcset="assets/img/png/feature-1@2x.png 2x, assets/img/png/feature-1@3x.png 3x" width="105" height="139" alt="")
+                  figcaption.image-labeled__figcaption Unlimited Art Creation
+              li.banner__description-item
+                figure.image-labeled
+                  img.image-labeled__img(src="assets/img/png/feature-2.png" srcset="assets/img/png/feature-2@2x.png 2x, assets/img/png/feature-2@3x.png 3x" width="105" height="139" alt="")
+                  figcaption.image-labeled__figcaption Exclusive Styles
+              li.banner__description-item
+                figure.image-labeled
+                  img.image-labeled__img(src="assets/img/png/feature-3.png" srcset="assets/img/png/feature-3@2x.png 2x, assets/img/png/feature-3@3x.png 3x" width="105" height="139" alt="")
+                  figcaption.image-labeled__figcaption Magic Avatars With 20% Off
+            .banner__controls
+              ul.banner__options.list-reset
+                li.banner__option
+                  label.radio-btn.radio-btn--highlighted
+                    input.radio-btn__logic(type="radio" name="subscription" value="https://apple.com/" checked)
+                    span.radio-btn__styled
+                      span.radio-btn__highlight Best offer
+                      span.radio-btn__group.radio-btn__label
+                        span.radio-btn__title Early access
+                        span.radio-btn__details Just $39.99 per year
+                      span.radio-btn__group
+                        span.radio-btn__details $0.48
+                        span.radio-btn__details per week
+                li.banner__option
+                  label.radio-btn
+                    input.radio-btn__logic(type="radio" name="subscription" value="https://apple.com/")
+                    span.radio-btn__styled
+                      span.radio-btn__group.radio-btn__label
+                        span.radio-btn__title Weekly access
+                      span.radio-btn__group
+                        span.radio-btn__details $6.99
+                        span.radio-btn__details per week
+
+              a.btn(href="#") Continue
+          .banner__footer
+            ul.banner__menu-list.list-reset
+              li.banner__menu-item
+                a.btn-text.banner__menu-link(href="#") Terms of Use
+              li.banner__menu-item
+                a.btn-text.banner__menu-link(href="#") Privacy Policy
+              li.banner__menu-item
+                a.btn-text.banner__menu-link(href="#") Restore
+
