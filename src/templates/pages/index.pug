@@ -27,7 +27,7 @@ block content
               ul.banner__options.list-reset
                 li.banner__option
                   label.radio-btn.radio-btn--highlighted
-                    input.radio-btn__logic(type="radio" name="subscription" value="https://apple.com/" checked)
+                    input.radio-btn__logic.js_subscrip-option(type="radio" name="subscription" value="https://apple.com/" checked)
                     span.radio-btn__styled
                       span.radio-btn__highlight Best offer
                       span.radio-btn__group.radio-btn__label
@@ -38,15 +38,14 @@ block content
                         span.radio-btn__details per week
                 li.banner__option
                   label.radio-btn
-                    input.radio-btn__logic(type="radio" name="subscription" value="https://apple.com/")
+                    input.radio-btn__logic.js_subscrip-option(type="radio" name="subscription" value="https://google.com/ ")
                     span.radio-btn__styled
                       span.radio-btn__group.radio-btn__label
                         span.radio-btn__title Weekly access
                       span.radio-btn__group
                         span.radio-btn__details $6.99
                         span.radio-btn__details per week
-
-              a.btn(href="#") Continue
+              button.btn.js_subscrip-continue(type="button") Continue
           .banner__footer
             ul.banner__menu-list.list-reset
               li.banner__menu-item

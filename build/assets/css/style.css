@@ -317,6 +317,7 @@ html {
 
 .banner {
   background: url(../img/jpg/bg.jpg) no-repeat 0 0/cover;
+  height: calc(var(--vh,1vh) * 100);
   height: 100svh;
 }
 
@@ -425,6 +426,7 @@ html {
 
 .btn {
   background: #fff;
+  width: 100%;
   border-radius: 3.2rem;
   color: #070b33;
   font-weight: 600;
@@ -532,5 +534,11 @@ html {
 @media (min-resolution:3dppx) {
   .banner {
     background-image: url(../img/jpg/bg@3x.jpg);
+  }
+}
+
+@media (orientation:landscape) {
+  .banner {
+    height: 100%;
   }
 }
