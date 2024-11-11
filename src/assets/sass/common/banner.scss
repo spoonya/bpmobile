@@ -49,9 +49,13 @@
 
   filter: drop-shadow(0 0 4.8rem rgba(4, 3, 26, 0.83));
 
+  body.lang-de & {
+    font-size: 2.4rem;
+  }
+
   body.lang-fr &,
-  body.lang-de &,
   body.lang-ja &,
+  body.lang-es &,
   body.lang-pt & {
     font-size: 3.6rem;
   }
@@ -107,12 +111,15 @@
 
 .banner__menu-link {
   body.lang-fr &,
-  body.lang-de & {
+  body.lang-de &,
+  body.lang-es &,
+  body.lang-ja &,
+  body.lang-pt & {
     font-size: 0.9rem;
   }
+}
 
-  body.lang-es &,
-  body.lang-pt & {
-    font-size: 1.1rem;
-  }
+.banner__menu-list {
+  height: 1.6rem;
+  min-height: 1.6rem;
 }

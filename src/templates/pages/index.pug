@@ -28,7 +28,7 @@ block content
                 li.banner__option
                   label.radio-btn.radio-btn--highlighted
                     input.radio-btn__logic.js_subscrip-option(type="radio" name="subscription" value="https://apple.com/" checked)
-                    span.radio-btn__styled
+                    span.radio-btn__styled.control
                       span.radio-btn__highlight(data-i18n="BEST OFFER")
                       span.radio-btn__group.radio-btn__label
                         span.radio-btn__title(data-i18n="YEARLY ACCESS")
@@ -38,12 +38,12 @@ block content
                 li.banner__option
                   label.radio-btn
                     input.radio-btn__logic.js_subscrip-option(type="radio" name="subscription" value="https://google.com/")
-                    span.radio-btn__styled
+                    span.radio-btn__styled.control
                       span.radio-btn__group.radio-btn__label
                         span.radio-btn__title(data-i18n="WEEKLY ACCESS")
                       span.radio-btn__group
                         span.radio-btn__details(data-i18n="{{price}} <br>per week" data-price="$6.99")
-              button.btn.js_subscrip-continue(type="button" data-i18n="Continue")
+              button.btn.js_subscrip-continue.control(type="button" data-i18n="Continue")
           .banner__footer
             ul.banner__menu-list.list-reset
               li.banner__menu-item

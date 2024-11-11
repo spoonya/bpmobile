@@ -127,12 +127,9 @@ body {
   &.lang-fr,
   &.lang-de,
   &.lang-es,
-  &.lang-pt {
-    font-size: 1.2rem;
-  }
-
+  &.lang-pt,
   &.lang-ja {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
