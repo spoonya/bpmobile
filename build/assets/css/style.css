@@ -351,10 +351,7 @@ html {
   filter: drop-shadow(0 0 4.8rem rgba(4, 3, 26, .83));
 }
 
-body.lang-de .banner__title {
-  font-size: 2.4rem;
-}
-
+body.lang-de .banner__title,
 body.lang-es .banner__title,
 body.lang-fr .banner__title,
 body.lang-ja .banner__title,
